@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'untitled'
     spec.version                  = '1.0-SNAPSHOT'
-    spec.homepage                 = 'https://www.cocoapods.org'
+    spec.homepage                 = 'https://github.com/LeartBytyqi1/CalculatorLib'
     spec.source                   = { :http=> ''}
     spec.authors                  = ''
     spec.license                  = ''
