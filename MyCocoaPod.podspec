@@ -1,10 +1,11 @@
 Pod::Spec.new do |spec|
-    spec.name                     = 'MyCocoaPod'
+    spec.name                     = 'untitled'
     spec.version                  = '1.0'
     spec.homepage                 = ''
     spec.source                   = { :http=> 'https://github.com/LeartBytyqi1/CalculatorLib'}
     spec.authors                  = ''
     spec.license                  = ''
+    spec.static_framework = true
     spec.summary                  = 'whatever'
     spec.vendored_frameworks      = 'build/cocoapods/framework/untitled.framework'
     spec.libraries                = 'c++'
