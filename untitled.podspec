@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'untitled'
     spec.version                  = '1.0-SNAPSHOT'
-    spec.homepage                 = 'https://github.com/LeartBytyqi1/CalculatorLib'
-    spec.source                   = { :http=> ''}
+    spec.homepage                 = ''
+    spec.source                   = { :http=> 'https://github.com/LeartBytyqi1/CalculatorLib.git'}
     spec.authors                  = ''
     spec.license                  = ''
     spec.summary                  = 'Whatever'
