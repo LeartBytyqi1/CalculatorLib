@@ -1,6 +1,7 @@
 plugins {
     kotlin("multiplatform") version "1.7.10"
     kotlin("native.cocoapods") version "1.7.20"
+    id("com.chromaticnoise.multiplatform-swiftpackage") version "2.0.3"
 }
 
 group = "me.leartbytyqi"
@@ -10,31 +11,13 @@ repositories {
     mavenCentral()
 }
 kotlin {
-    cocoapods {
-        // Required properties
-        // Specify the required Pod version here. Otherwise, the Gradle project version is used.
-        version = "1.0"
-
-        // Optional properties
-        // Configure the Pod name here instead of changing the Gradle project name
-        name = "MyCocoaPod"
-
-        framework {
-            // Required properties
-            // Framework name configuration. Use this property instead of deprecated 'frameworkName'
-            baseName = "MyFramework"
-
-            // Optional properties
-            // Dynamic framework support
-            isStatic = false
-            // Dependency export
-            export(project(":anotherKMMModule"))
-            transitiveExport = false // This is default.
+    multiplatformSwiftPackage {
+        packageName("untitled")
+        swiftToolsVersion("5.3")
+        targetPlatforms {
+            iOS { v("11") }
         }
-
-        // Maps custom Xcode configuration to NativeBuildType
-        xcodeConfigurationToNativeBuildType["CUSTOM_DEBUG"] = org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.DEBUG
-        xcodeConfigurationToNativeBuildType["CUSTOM_RELEASE"] = org.jetbrains.kotlin.gradle.plugin.mpp.NativeBuildType.RELEASE
+        outputDirectory(File(rootDir, "/"))
     }
     jvm {
         compilations.all {

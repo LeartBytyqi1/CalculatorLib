@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
-    spec.name                     = 'untitled'
-    spec.version                  = '1.0-SNAPSHOT'
+    spec.name                     = 'MyCocoaPod'
+    spec.version                  = '1.0'
     spec.homepage                 = ''
     spec.source                   = { :http=> ''}
     spec.authors                  = ''
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
                 
     spec.script_phases = [
         {
-            :name => 'Build untitled',
+            :name => 'Build MyCocoaPod',
             :execution_position => :before_compile,
             :shell_path => '/bin/sh',
             :script => <<-SCRIPT
@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
                 fi
                 set -ev
                 REPO_ROOT="$PODS_TARGET_SRCROOT"
-                "$REPO_ROOT/../../AppData/Local/Temp/wrap11loc/gradlew" -p "$REPO_ROOT" $KOTLIN_PROJECT_PATH:syncFramework \
+                "$REPO_ROOT/../../AppData/Local/Temp/wrap8loc/gradlew" -p "$REPO_ROOT" $KOTLIN_PROJECT_PATH:syncFramework \
                     -Pkotlin.native.cocoapods.platform=$PLATFORM_NAME \
                     -Pkotlin.native.cocoapods.archs="$ARCHS" \
                     -Pkotlin.native.cocoapods.configuration="$CONFIGURATION"
