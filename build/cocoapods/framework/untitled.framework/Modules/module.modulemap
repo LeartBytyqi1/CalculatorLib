@@ -1,6 +1,6 @@
 framework module untitled {
   umbrella header "placeholder.h"
 
-  export *
+  export "unitled"
   module * { export * }
 }
