@@ -8,5 +8,5 @@ Pod::Spec.new do |spec|
     spec.summary                  = 'Whatever'
     spec.vendored_frameworks      = 'build/cocoapods/framework/untitled.framework'
     spec.libraries                = 'c++'
-                
+    spec.ios.deployment_target = '14.0'
 end
