@@ -1,11 +1,11 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'untitled'
     spec.version                  = '1.0-SNAPSHOT'
-    spec.homepage                 = ''
+    spec.homepage                 = 'https://www.cocoapods.org'
     spec.source                   = { :http=> ''}
     spec.authors                  = ''
     spec.license                  = ''
-    spec.summary                  = ''
+    spec.summary                  = 'Whatever'
     spec.vendored_frameworks      = 'build/cocoapods/framework/untitled.framework'
     spec.libraries                = 'c++'
                 
